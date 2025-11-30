@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akash Mishra — Cybersecurity Portfolio (Static)</title>
+  <meta name="description" content="Akash Mishra — Aspiring Penetration Tester. Portfolio showcasing projects, skills, and contact." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html,body{height:100%}
+    body{background:linear-gradient(180deg,#071029 0%, #071826 60%); color:#cbd5e1; font-family:Inter, system-ui, -apple-system, Roboto, 'Helvetica Neue', Arial}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    .glass{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); backdrop-filter: blur(8px); border:1px solid rgba(255,255,255,0.04); }
+    .hero-name{font-weight:800;font-size:40px; background:linear-gradient(90deg,#7c3aed,#06b6d4,#f472b6); -webkit-background-clip:text; color:transparent}
+    .cursor{display:inline-block;width:2px;height:1.1em;background:#06b6d4;margin-left:6px;vertical-align:middle;animation:blink 900ms steps(2) infinite}
+    @keyframes blink{50%{opacity:0}}
+    .parallax-blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:0.85;mix-blend-mode:screen;transform:translate3d(0,0,0)}
+    .tilt{transition:transform .25s ease, box-shadow .25s ease}
+    .tilt:hover{box-shadow:0 30px 60px rgba(2,6,23,0.5)}
+    .skill-bar{height:10px;background:rgba(255,255,255,0.06);border-radius:999px;overflow:hidden}
+    .skill-fill{height:100%;background:linear-gradient(90deg,#7c3aed,#06b6d4);width:0}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease, transform .7s cubic-bezier(.2,.9,.3,1)}
+    .reveal.visible{opacity:1;transform:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="flex items-center justify-between py-4">
+      <div class="flex items-center gap-4">
+        <div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#f472b6);display:flex;align-items:center;justify-content:center;font-weight:700;color:white">AM</div>
+        <div>
+          <div class="text-sm text-slate-300">Akash Mishra</div>
+          <div class="text-xs text-slate-400">Aspiring Penetration Tester • BCA • Redynox Intern</div>
+        </div>
+      </div>
+      <nav class="text-sm text-slate-300 space-x-5">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="grid md:grid-cols-2 gap-8 items-center mt-10">
+        <div>
+          <div class="hero-name">Hi, I’m Akash</div>
+          <div class="mt-3 text-slate-300 text-lg">I build tools and reports for web & cloud security. I use Kali Linux, Python, and automated tooling to find vulnerabilities.</div>
+          <div class="mt-4 flex items-center gap-3">
+            <div id="typing" style="font-weight:600;color:#d1fae5"></div><span class="cursor" aria-hidden="true"></span>
+          </div>
+          <div class="mt-8 flex gap-3">
+            <a href="#projects" class="px-5 py-3 rounded-md glass">View Projects</a>
+            <a href="mailto:akashmis2003@gmail.com" class="px-5 py-3 rounded-md" style="background:linear-gradient(90deg,#7c3aed,#06b6d4);color:white">Contact</a>
+          </div>
+          <div class="mt-6 flex gap-2">
+            <span class="px-3 py-1 text-xs glass">Kali Linux</span>
+            <span class="px-3 py-1 text-xs glass">Python</span>
+          </div>
+        </div>
+        <div>
+          <div class="glass p-6 rounded-2xl tilt">
+            <h4 class="text-lg font-semibold">Contact</h4>
+            <p class="mt-2 text-slate-300">Email: akashmis2003@gmail.com</p>
+            <p class="text-slate-300">Phone: 83083054732</p>
+            <p class="text-slate-300">Location: D.L.W, Varanasi</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mt-12 reveal glass p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold">About me</h3>
+        <p class="mt-3 text-slate-300">I am Akash Mishra, a BCA student practicing penetration testing on Kali Linux. I automate scanning and recon using Python scripts, and I completed an internship at Redynox where I worked on web and network security assessments.</p>
+      </section>
+
+      <section id="skills" class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="reveal glass p-6 rounded-2xl">
+          <h4 class="font-semibold">Technical Skills</h4>
+          <div class="mt-4 space-y-4">
+            <div>
+              <div class="text-sm">Kali Linux <span class="text-xs text-slate-400">(Expert)</span></div>
+              <div class="skill-bar mt-2"><div class="skill-fill" data-fill="95%"></div></div>
+            </div>
+            <div>
+              <div class="text-sm">Python <span class="text-xs text-slate-400">(Advanced)</span></div>
+              <div class="skill-bar mt-2"><div class="skill-fill" data-fill="85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal glass p-6 rounded-2xl">
+          <h4 class="font-semibold">Tools & Platforms</h4>
+          <ul class="mt-3 text-slate-300 space-y-2">
+            <li>Burp Suite, Nmap, Metasploit (basics)</li>
+            <li>VS Code, GitHub, Netlify</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="mt-8">
+        <h3 class="text-xl font-semibold text-slate-100">Projects</h3>
+        <div class="mt-4 grid md:grid-cols-2 gap-4">
+          <article class="reveal glass p-5 rounded-xl tilt">
+            <h5 class="font-semibold">Cloud Pentest Toolkit</h5>
+            <p class="mt-2 text-slate-300">Automation scripts and checks for cloud misconfigurations. Includes example reports and remediation steps.</p>
+            <div class="mt-3 text-sm"><a href="#" class="text-slate-100">View code</a></div>
+          </article>
+          <article class="reveal glass p-5 rounded-xl tilt">
+            <h5 class="font-semibold">OSINT Recon Tool</h5>
+            <p class="mt-2 text-slate-300">Tool to gather public footprint data to assist in scoping engagements and threat modelling.</p>
+            <div class="mt-3 text-sm"><a href="#" class="text-slate-100">View code</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-10 reveal glass p-8 rounded-2xl">
+        <h3 class="text-xl font-semibold">Contact</h3>
+        <p class="mt-3 text-slate-300">Open to internships, freelance work, and project collaboration. Reach me at:</p>
+        <ul class="mt-3 text-slate-300">
+          <li>Email: <a href="mailto:akashmis2003@gmail.com" class="text-slate-100">akashmis2003@gmail.com</a></li>
+          <li>Phone: 83083054732</li>
+          <li>Location: D.L.W, Varanasi, India</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="mt-12 text-center"><small>© 2025 Akash Mishra • Built with HTML & JS</small></footer>
+  </div>
+
+  <script>
+    // Typing effect
+    const phrases = ['Penetration Tester', 'Kali Linux Practitioner', 'Python Automation', 'Cloud Security Enthusiast'];
+    const typingEl = document.getElementById('typing'); let pIndex=0, charIndex=0; let forward=true;
+    function tick(){ const current = phrases[pIndex]; if(forward){ charIndex++; typingEl.textContent = current.slice(0,charIndex); if(charIndex===current.length){ forward=false; setTimeout(tick,900); return; } } else{ charIndex--; typingEl.textContent = current.slice(0,charIndex); if(charIndex===0){ forward=true; pIndex=(pIndex+1)%phrases.length; } } setTimeout(tick,80); }
+    tick();
+
+    // skill bars animate
+    document.querySelectorAll('.skill-fill').forEach(el=>{ const fill = el.dataset.fill || '80%'; el.style.transition='width 1.4s cubic-bezier(.2,.9,.3,1)'; setTimeout(()=>el.style.width=fill,600); });
+
+    // reveal sections
+    document.querySelectorAll('.reveal').forEach((s,i)=>{ setTimeout(()=>s.classList.add('visible'), 150*i+200); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Minimal reset + simple styles. Replace with Tailwind for full design. */
+:root{--bg:#071029;--muted:#cbd5e1;--accent1:#7c3aed;--accent2:#06b6d4}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(180deg,var(--bg),#071826);color:var(--muted)}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.hero{padding:48px 0;display:flex;gap:24px;align-items:center}
+.glass{background:rgba(255,255,255,0.02);padding:18px;border-radius:14px}
+.btn{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;padding:10px 16px;border-radius:10px;display:inline-block}
